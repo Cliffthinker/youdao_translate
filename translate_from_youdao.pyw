@@ -16,7 +16,7 @@ win.geometry('600x200+900+150')
 # Label(win, text='输入内容：').place(x=80, y=110)
 InputText = Text(win, height=25, width=42)
 InputText.pack(side='left')
-InputText.insert(INSERT,"Input content to translate.")
+# InputText.insert(INSERT,"Input content to translate.")
 
 OutputText = Text(win, height=25, width=42)
 OutputText.pack(side='right')
