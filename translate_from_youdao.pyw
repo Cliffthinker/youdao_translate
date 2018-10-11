@@ -11,14 +11,16 @@ def keycontral2(event):
 # 搭建窗口&全局变量
 win = Tk()
 win.title('有道翻译API')
-win.geometry('600x200+900+150')
+win.geometry('400x160+1100+150')
+#600x200, text_w=42, button_x=260, button_y=170
+
 #窗体初始化
 # Label(win, text='输入内容：').place(x=80, y=110)
-InputText = Text(win, height=25, width=42)
+InputText = Text(win, height=25, width=28)
 InputText.pack(side='left')
 # InputText.insert(INSERT,"Input content to translate.")
 
-OutputText = Text(win, height=25, width=42)
+OutputText = Text(win, height=25, width=28)
 OutputText.pack(side='right')
 
 def main_login():
@@ -31,8 +33,6 @@ def main_login():
 
 btn_login = Button(win, text='->', width=10, command=main_login)
 btn_login.bind_all('<Return>',keycontral)
-btn_login.place(x=260, y=170)
-
-
+btn_login.place(x=160, y=130)
 
 win.mainloop()
